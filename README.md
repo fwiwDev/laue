@@ -2,7 +2,7 @@
 <img src="logo/512px.svg" width=25%>
 </h1>
 
-# Laue
+# lauecharts
 
 Forked from QingWei-Li/laue
 
