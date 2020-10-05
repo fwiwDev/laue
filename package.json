@@ -1,6 +1,6 @@
 {
   "name": "laue",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "Modern charts for Vue.js",
   "main": "dist/laue.umd.js",
   "module": "dist/laue.js",
@@ -16,9 +16,9 @@
     "pub": "sh ./scripts/release.sh",
     "dev:test": "jest --watch",
     "test": "jest --coverage",
-    "deploy:docs": "gh-pages -d website/dist -t -r git@github.com:QingWei-Li/laue.git"
+    "deploy:docs": "gh-pages -d website/dist -t -r git@github.com:fwiwDev/laue.git"
   },
-  "repository": "QingWei-Li/laue",
+  "repository": "fwiwDev/laue",
   "files": [
     "dist",
     "src"
@@ -36,8 +36,7 @@
     "area",
     "graph"
   ],
-  "author": "qingwei-li <cinwell.li@gmail.com> (https://github.com/QingWei-Li)",
-  "homepage": "https://laue.js.org",
+  "author": "fwiwDev",
   "license": "MIT",
   "eslintConfig": {
     "extends": "xo-space/browser",

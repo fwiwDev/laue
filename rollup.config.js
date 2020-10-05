@@ -9,7 +9,7 @@ const banner = `/*!
  * Laue v${VERSION}
  * https://laue.js.org
  *
- * Copyright (c) 2018 qingwei-li
+ * Copyright (c) 2020 fwiwDev
  * Licensed under the MIT license
  */\n`
 const configs = []
