@@ -9,8 +9,8 @@ Forked from QingWei-Li/laue
 <!-- [![Build Status](https://img.shields.io/travis/fwiwDev/laue.svg?style=flat-square)](https://travis-ci.org/fwiwDev/laue) -->
 <!-- [![Coverage Status](https://img.shields.io/coveralls/fwiwDev/laue.svg?style=flat-square)](https://coveralls.io/github/fwiwDev/laue?branch=master) -->
 
-[![npm](https://img.shields.io/npm/v/laue.svg?style=flat-square)](https://www.npmjs.com/package/fwiwDev/laue)
-![](http://img.badgesize.io/https://unpkg.com/laue?compression=gzip&label=gzip%20size&style=flat-square)
+[![npm](https://img.shields.io/npm/v/laue.svg?style=flat-square)](https://www.npmjs.com/package/fwiwDev/lauecharts)
+![](http://img.badgesize.io/https://unpkg.com/lauecharts?compression=gzip&label=gzip%20size&style=flat-square)
 
 > 🖖📈 Modern charts for Vue.js
 
@@ -24,19 +24,19 @@ Documentation: https://laue.js.org
 ## Installation
 
 ```shell
-npm i fwiwDev/laue
+npm i fwiwDev/lauecharts
 ```
 
 ## Usage
 
 ```javascript
 import Vue from 'vue'
-import { Laue } from 'laue'
+import { Laue } from 'lauecharts'
 
 Vue.use(Laue)
 
 // On demand
-import { Cartesian, Line } from 'laue'
+import { Cartesian, Line } from 'lauecharts'
 
 Vue.component(Cartesian.name, Cartesian)
 Vue.component(Line.name, Line)
