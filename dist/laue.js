@@ -2987,7 +2987,11 @@ var Tooltip = {
           );
           this.$set(this.store, 'activedIndex', index);
           this.top = Math.min(relY + offset, maxTop);
-          this.show = true;
+          if (this.Plane._props.data[index].value) {
+            this.show = true;
+          } else {
+            this.show = false
+          }
         }
         return
       }
