@@ -1,5 +1,5 @@
 {
-  "name": "laue",
+  "name": "lauecharts",
   "version": "1.0.0",
   "description": "Modern charts for Vue.js",
   "main": "dist/laue.umd.js",
