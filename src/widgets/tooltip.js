@@ -40,7 +40,11 @@ export default {
           )
           this.$set(this.store, 'activedIndex', index)
           this.top = Math.min(relY + offset, maxTop)
-          this.show = true
+          if (this.store.activedPoint ? this.store.activedPoint[0].value : '') {
+            this.show = true;
+          } else {
+            this.show = false
+          }
         }
         return
       }
