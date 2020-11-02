@@ -63,11 +63,11 @@ export default {
                 attrs: {
                   x: point[0],
                   y: point[1],
-                  dy: '-0.31em',
+                  dy: '-0.85em',
                   'text-anchor': 'middle'
                 }
               },
-              this.raws[i]
+              self.displayUnits ? this$1.raws[i] + self.displayUnits : this$1.raws[i]
             )
           })
         )
