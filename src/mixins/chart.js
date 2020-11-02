@@ -12,7 +12,9 @@ export default {
 
     label: String,
 
-    showValue: Boolean
+    showValue: Boolean,
+
+    displayUnits: String
   },
 
   computed: {

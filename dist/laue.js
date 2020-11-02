@@ -704,7 +704,9 @@ var chart = {
 
     label: String,
 
-    showValue: Boolean
+    showValue: Boolean,
+
+    displayUnits: String
   },
 
   computed: {
@@ -1311,6 +1313,8 @@ var Line = {
 
       var h = this.$createElement;
 
+      const self = this;
+
       return (
         this.showValue &&
         h(
@@ -1327,11 +1331,11 @@ var Line = {
                 attrs: {
                   x: point$$1[0],
                   y: point$$1[1],
-                  dy: '-0.31em',
+                  dy: '-0.85em',
                   'text-anchor': 'middle'
                 }
               },
-              this$1.raws[i]
+              self.displayUnits ? this$1.raws[i] + self.displayUnits : this$1.raws[i]
             )
           })
         )
@@ -1686,7 +1690,8 @@ var Bar = {
                   'text-anchor': 'middle'
                 }
               },
-              this$1.raws[i]
+              self.displayUnits ? this$1.raws[i] + self.displayUnits : this$1.raws[i]
+              // this$1.raws[i]
             )
           })
         )
@@ -2289,7 +2294,8 @@ var Pie = {
               'text-anchor': 'middle'
             }
           },
-          this$1.raws[i]
+          self.displayUnits ? this$1.raws[i] + self.displayUnits : this$1.raws[i]
+          // this$1.raws[i]
         )
       })
     },
@@ -2987,7 +2993,7 @@ var Tooltip = {
           );
           this.$set(this.store, 'activedIndex', index);
           this.top = Math.min(relY + offset, maxTop);
-          if (this.Plane._props.data[index].value) {
+          if (this.store.activedPoint ? this.store.activedPoint[0].value : '') {
             this.show = true;
           } else {
             this.show = false
