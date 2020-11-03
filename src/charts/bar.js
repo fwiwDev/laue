@@ -59,7 +59,7 @@ export default {
                   'text-anchor': 'middle'
                 }
               },
-              self.displayUnits ? this$1.raws[i] + self.displayUnits : this$1.raws[i]
+              this$1.displayUnits ? this$1.raws[i] + this$1.displayUnits : this$1.raws[i]
             )
           })
         )

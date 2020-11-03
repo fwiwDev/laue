@@ -1313,8 +1313,6 @@ var Line = {
 
       var h = this.$createElement;
 
-      const self = this;
-
       return (
         this.showValue &&
         h(
@@ -1335,7 +1333,7 @@ var Line = {
                   'text-anchor': 'middle'
                 }
               },
-              self.displayUnits ? this$1.raws[i] + self.displayUnits : this$1.raws[i]
+              this$1.displayUnits ? this$1.raws[i] + this$1.displayUnits : this$1.raws[i]
             )
           })
         )
@@ -1690,8 +1688,7 @@ var Bar = {
                   'text-anchor': 'middle'
                 }
               },
-              self.displayUnits ? this$1.raws[i] + self.displayUnits : this$1.raws[i]
-              // this$1.raws[i]
+              this$1.displayUnits ? this$1.raws[i] + this$1.displayUnits : this$1.raws[i]
             )
           })
         )
@@ -2294,8 +2291,7 @@ var Pie = {
               'text-anchor': 'middle'
             }
           },
-          self.displayUnits ? this$1.raws[i] + self.displayUnits : this$1.raws[i]
-          // this$1.raws[i]
+          this$1.displayUnits ? this$1.raws[i] + this$1.displayUnits : this$1.raws[i]
         )
       })
     },
